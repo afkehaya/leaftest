@@ -1,4 +1,5 @@
 class DianosaursController < ApplicationController
+  protect_from_forgery except: :show
   before_action :set_dianosaur, only: [:show, :edit, :update, :destroy]
 
   # GET /dianosaurs
