@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @dianosaur.name %>
+</p>
+
+<p>
+  <strong>Genus:</strong>
+  <%= @dianosaur.genus %>
+</p>
+
+<p>
+  <strong>Embed Script:</strong>
+<!-- <pre><code>  <script src="{root_url}/dianosaurs/{@dianosaur.id}.js" type="text/javascript"></script></code></pre> -->
+
+<%= link_to 'Edit', edit_dianosaur_path(@dianosaur) %> |
+<%= link_to 'Back', dianosaurs_path %>
