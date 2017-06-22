@@ -12,7 +12,7 @@
 
 <p>
   <strong>Embed Script:</strong>
-<!-- <pre><code>  <script src="{root_url}/dianosaurs/{@dianosaur.id}.js" type="text/javascript"></script></code></pre> -->
+<pre>&lt;script src="<%= root_url %>dianosaurs/<%= @dianosaur.id %>.js" type="text/javascript"&gt; &lt;/script&gt;</pre>
 
 <%= link_to 'Edit', edit_dianosaur_path(@dianosaur) %> |
 <%= link_to 'Back', dianosaurs_path %>
